@@ -28,8 +28,8 @@
 		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 		<meta name="author" content="International Crisis Group">
 		<meta property="article:published_time" content="2021-12-09T07:00:00+00:00" />
-		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
-		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
 		<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
 		<script src="https://public.flourish.studio/resources/embed.js"></script>
 		<script src="https://unpkg.com/scrollama"></script>
@@ -205,7 +205,7 @@ var map = new mapboxgl.Map({
 		transformRequest: transformRequest
 });
 
-var insetConfig = [37.811, 48.125];
+var insetConfig = [49.950464, 26.711054];
 
 var mapInset = new mapboxgl.Map({
     container: 'mapInset',
@@ -233,7 +233,10 @@ map.on("load", function() {
 						'maxzoom': 14
 				});
 				// add the DEM source as a terrain layer with exaggerated height
-				map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+				map.setTerrain({
+					'source': 'mapbox-dem',
+					'exaggeration': 1.5
+				});
 
 				// add a sky layer that will show when the map is highly pitched
 				map.addLayer({
@@ -265,75 +268,19 @@ map.on("load", function() {
 				 else
 				 	$("#mapInset").css({opacity: 1});
 
-					if (chapterid == "UKR") {
+					if (chapterid == "00") {
 						mapInset.fitBounds([
-							[35.215919,47.116768],
-							[40.417945,48.907962]
+							[13.177859,9.960352],
+							[82.391726,42.934022]
 						]);
 					}
 
-						if (chapterid == "ETH") {
+						if (chapterid == "01") {
 							mapInset.fitBounds([
-								[34.349737,6.355852],
-								[43.193731,11.649159]
+								[54.081347,25.458786],
+								[58.407214,27.562472]
 							]);
 							}
-
-							if (chapterid == "AFG") {
-								mapInset.fitBounds([
-									[64.748802,32.288266],
-									[73.592796,36.704735]
-								]);
-								}
-
-								if (chapterid == "CNUS2") {
-									mapInset.fitBounds([
-										[105.991928,8.334124],
-										[123.679916,18.742817]
-									]);
-									}
-
-									if (chapterid == "IRUS") {
-										mapInset.fitBounds([
-											[50.730281,32.951784],
-											[53.099208,34.069298]
-										]);
-										}
-
-										if (chapterid == "YEM") {
-											mapInset.fitBounds([
-												[37.102557,10.756289],
-												[57.800799,21.052345]
-											]);
-											}
-
-											if (chapterid == "ISPS") {
-												mapInset.fitBounds([
-													[34.040434,31.205294],
-													[36.409361,32.344707]
-												]);
-												}
-
-												if (chapterid == "MALI") {
-													mapInset.fitBounds([
-														[-17.506647,4.588848],
-														[20.396185,25.186395]
-													]);
-													}
-
-													if (chapterid == "MYM") {
-														mapInset.fitBounds([
-															[86.957999,16.028859],
-															[105.909415,26.021190]
-														]);
-														}
-
-														if (chapterid == "HT") {
-															mapInset.fitBounds([
-																[-74.991212,17.502977],
-																[-69.816651,20.040794]
-															]);
-															}
 
 				response.element.classList.add('active');
 				map[chapter.mapAnimation || 'flyTo'](chapter.location);
