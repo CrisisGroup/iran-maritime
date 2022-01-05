@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/ckxsaz25s1dx414qdkmb9lz6u',
+    style: 'mapbox://styles/daltonwb/cky1tf2ur0rnt14o5p0wxqvnt',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -56,13 +56,13 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'A Global Chokepoint',
-            image: '',
+            image: 'images/hormuz.png',
             description: 'Nearly one-fifth of the world’s oil, and a quarter of its liquified natural gas, flows through the Strait of Hormuz. More than forty thousand ships each year. But this chokepoint and the waters around it are also a major geopolitical flashpoint.',
             location: {
-              center: [57.210231, 24.266239],
-              zoom: 5.4,
-              pitch: 47,
-              bearing: -8.8
+              center: [55.604979, 25.750385],
+              zoom: 6.75,
+              pitch: 40.50,
+              bearing: 12
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -77,21 +77,11 @@ var config = {
                 layer: 'natural-label',
                 duration: 1000,
                 opacity: 1
-              },
-              {
-                layer: 'hormuz-dot',
-                duration: 1000,
-                opacity: 1
               }
             ],
             onChapterExit: [
               {
                 layer: 'hormuz',
-                duration: 1000,
-                opacity: 0
-              },
-              {
-                layer: 'hormuz-dot',
                 duration: 1000,
                 opacity: 0
               },
@@ -110,8 +100,8 @@ var config = {
             image: '',
             description: 'The implications of an escalation would be profound and carry global reverberations.',
             location: {
-              center: [48.000236, 23.802554],
-              zoom: 4.25,
+              center: [43.894031, 23.574273],
+              zoom: 3.75,
               pitch: 0,
               bearing: 0
             },
@@ -285,7 +275,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'The Fujairah attacks were followed by a series of additional attacks and seizures against commercial shipping. By August 2021, there were at least 37 suspected Iranian operations against vessels flagged from more than a dozen countries.',
+            description: 'By August 2021, there were close to 24 suspected Iranian operations against vessels flagged from more than 12 countries.',
             location: {
               center: [58.783763, 22.493531],
               zoom: 5.6,
