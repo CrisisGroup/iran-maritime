@@ -116,11 +116,6 @@ var config = {
               }
             ],
             onChapterExit: [
-              {
-                layer: 'maritime-tracker',
-                duration: 1000,
-                opacity: 0
-              }
           ]
         },
         {
@@ -131,8 +126,8 @@ var config = {
             image: '',
             description: 'A spate of attacks against commercial tankers in May 2019 marked the start of a two-pronged Iranian response to the U.S. “maximum pressure” campaign, which significantly interrupted Iran’s oil export, a key revenue source for Tehran.',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [43.894031, 23.574273],
+              zoom: 3.75,
               pitch: 0,
               bearing: 0
             },
@@ -154,8 +149,8 @@ var config = {
             image: '',
             description: 'As Iran started downgrading its compliance with the 2015 Joint Comprehensive Plan of Action (JCPOA), it also stepped up its regional provocations as part of a “maximum resistance” campaign to counter the Trump administration’s unilateral sanctions.',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [43.894031, 23.574273],
+              zoom: 3.75,
               pitch: 0,
               bearing: 0
             },
@@ -177,8 +172,8 @@ var config = {
             image: '',
             description: 'Iranian political and military officials had for months threatened that U.S. curtailment of its energy sales would not go without a response.',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [43.894031, 23.574273],
+              zoom: 3.75,
               pitch: 0,
               bearing: 0
             },
@@ -203,7 +198,8 @@ var config = {
               center: [12.234568, 23.422547],
               zoom: 2,
               pitch: 0,
-              bearing: 0
+              bearing: 0,
+              speed: 0.7
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
