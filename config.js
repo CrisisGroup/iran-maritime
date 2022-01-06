@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cky1tf2ur0rnt14o5p0wxqvnt',
+    style: 'mapbox://styles/daltonwb/cky27oxwq149o14qjtvpqvwzg',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -184,7 +184,11 @@ var config = {
 
             ],
             onChapterExit: [
-
+              {
+                layer: 'maritime-tracker',
+                duration: 1000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -243,7 +247,7 @@ var config = {
             description: 'In 12 May 2019, amidst high tension between Tehran and Washington, four tankers were attacked near the UAE port of Fujairah.',
             location: {
               center: [56.464665, 25.188390],
-              zoom: 11.9,
+              zoom: 11,
               pitch: 63,
               bearing: -109.30
             },
