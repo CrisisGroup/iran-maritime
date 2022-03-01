@@ -247,3 +247,30 @@ ul.legend-ul li {
   color: #CCC;
   font-size: .8em;
 }
+
+/* Popup boxes */
+
+.mapboxgl-popup-content {
+  font-family: 'Libre Franklin', sans-serif;
+  color: #000;
+}
+
+.mapboxgl-popup-content strong {
+  font-size: 14px;
+  color: #000;
+}
+
+.mapboxgl-popup-content p  {
+  font-size: 13px;
+  line-height: 1.4286;
+  color: #000;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 24px;
+}
+
+.mapboxgl-ctrl-top-right {
+    top: 1% !important;
+    right: 1% !important;
+}

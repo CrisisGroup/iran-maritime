@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/ckzybh696000c16nuqwmbj2ym',
+    style: 'mapbox://styles/daltonwb/cl08q3p8j001a15nx5j4r2bee',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -18,8 +18,8 @@ var config = {
           image: '',
           description: 'Since 2019, maritime tensions around involving Iran  have grown more pronounced, with dozens of confirmed or suspected incidents in a multidimensional shadow war playing out from the Indian Ocean to the Mediterranean.',
           location: {
-            center: [43.894031, 23.574273],
-            zoom: 3.75,
+            center: [44.750101, 27.807322],
+            zoom: 3.5,
             pitch: 0,
             bearing: 0
           },
@@ -77,6 +77,11 @@ var config = {
                 layer: 'natural-label',
                 duration: 1000,
                 opacity: 1
+              },
+              {
+                layer: 'maritime-tracker',
+                duration: 1000,
+                opacity: 0
               }
             ],
             onChapterExit: [
@@ -185,7 +190,16 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'iran-markers',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'iran-markers-tick',
+                duration: 1000,
+                opacity: 0
+              }
             ],
             onChapterExit: [
 
@@ -199,10 +213,10 @@ var config = {
             image: '',
             description: 'In 12 May 2019, amidst high tension between Tehran and Washington, four tankers were attacked near the UAE port of Fujairah.',
             location: {
-              center: [56.464665, 25.188390],
-              zoom: 11,
-              pitch: 63,
-              bearing: -109.30
+              center: [56.449505, 25.183881],
+              zoom: 12.34,
+              pitch: 69.50,
+              bearing: -110.13
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -217,6 +231,16 @@ var config = {
                 layer: 'ships-icons',
                 duration: 1000,
                 opacity: 1
+              },
+              {
+                layer: 'iran-markers',
+                duration: 1000,
+                opacity: 1
+              },
+              {
+                layer: 'iran-markers-tick',
+                duration: 1000,
+                opacity: 1
               }
             ],
             onChapterExit: [
@@ -227,6 +251,16 @@ var config = {
               },
               {
                 layer: 'ships-icons',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'iran-markers',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'iran-markers-tick',
                 duration: 1000,
                 opacity: 0
               }
@@ -253,6 +287,16 @@ var config = {
                 layer: 'counter-iranian-ops',
                 duration: 1000,
                 opacity: 1
+              },
+              {
+                layer: 'iran-markers',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'iran-markers-tick',
+                duration: 1000,
+                opacity: 0
               }
             ],
             onChapterExit: [
@@ -280,7 +324,16 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'iran-markers',
+                duration: 1000,
+                opacity: 1
+              },
+              {
+                layer: 'iran-markers-tick',
+                duration: 1000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
 
@@ -306,7 +359,16 @@ var config = {
 
             ],
             onChapterExit: [
-
+              {
+                layer: 'iran-markers',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'iran-markers-tick',
+                duration: 1000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -395,10 +457,18 @@ var config = {
             rotateAnimation: true,
             callback: 'disableFreetime',
             onChapterEnter: [
-
+              {
+                layer: 'mercer-street',
+                duration: 1000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                layer: 'mercer-street',
+                duration: 1000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -407,7 +477,7 @@ var config = {
             hidden: false,
             title: 'Policy Recommendations',
             image: '',
-            description: 'EMASOH and ISMC could increase coordination or merge to increase their capabilities. If the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran need not see these measures as yet another way to exert pressure on Iran. Still, as a precaution, the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could lead to confrontation.',
+            description: 'EMASOH and ISMC could increase coordination or merge to increase their capabilities. If the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran need not see these measures as yet another way to exert pressure on Iran. Still, as a precaution, the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could lead to confrontation.<br /><br /><strong>Explore & find more insights with our dataset</strong>. Just drag and zoom to go where you want, or <a href="#15">return to the story above by clicking here</a>.',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,
