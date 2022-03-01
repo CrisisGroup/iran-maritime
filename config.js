@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cky27oxwq149o14qjtvpqvwzg',
+    style: 'mapbox://styles/daltonwb/ckzybh696000c16nuqwmbj2ym',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -18,10 +18,10 @@ var config = {
           image: '',
           description: 'Since 2019, maritime tensions around involving Iran  have grown more pronounced, with dozens of confirmed or suspected incidents in a multidimensional shadow war playing out from the Indian Ocean to the Mediterranean.',
           location: {
-            center: [56.227470, 23.626711],
-            zoom: 3,
-            pitch: 35,
-            bearing: -12
+            center: [43.894031, 23.574273],
+            zoom: 3.75,
+            pitch: 0,
+            bearing: 0
           },
           mapAnimation: 'flyTo',
           rotateAnimation: false,
@@ -100,8 +100,8 @@ var config = {
             image: '',
             description: 'The implications of an escalation would be profound and carry global reverberations.',
             location: {
-              center: [43.894031, 23.574273],
-              zoom: 3.75,
+              center: [44.090466, 24.903992],
+              zoom: 4.25,
               pitch: 0,
               bearing: 0
             },
@@ -142,35 +142,12 @@ var config = {
           ]
         },
         {
-            id: '04',
-            alignment: 'left',
-            hidden: false,
-            title: '',
-            image: '',
-            description: 'As Iran started downgrading its compliance with the 2015 Joint Comprehensive Plan of Action (JCPOA), it also stepped up its regional provocations as part of a “maximum resistance” campaign to counter the Trump administration’s unilateral sanctions.',
-            location: {
-              center: [43.894031, 23.574273],
-              zoom: 3.75,
-              pitch: 0,
-              bearing: 0
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-
-            ],
-            onChapterExit: [
-
-          ]
-        },
-        {
             id: '05',
             alignment: 'left',
             hidden: false,
             title: '',
             image: '',
-            description: 'Iranian political and military officials had for months threatened that U.S. curtailment of its energy sales would not go without a response.',
+            description: '<a href="Averting the Middle East’s 1914 Moment" target="_blank">Iranian political and military officials had for months threatened</a> that U.S. curtailment of its energy sales would not go without a response.',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,
@@ -189,30 +166,6 @@ var config = {
                 duration: 1000,
                 opacity: 0
               }
-          ]
-        },
-        {
-            id: '06',
-            alignment: 'full',
-            hidden: false,
-            title: '',
-            image: '',
-            description: '<h2 class="liftout">“We will make the enemy understand that either everyone can use the Strait of Hormuz or no one”,</h2> – Commander of the Islamic Revolutionary Guard Corps (IRGC) in July 2018.',
-            location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
-              pitch: 0,
-              bearing: 0,
-              speed: 0.7
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-
-            ],
-            onChapterExit: [
-
           ]
         },
         {
@@ -259,11 +212,21 @@ var config = {
                 layer: 'fujairah-ships',
                 duration: 1000,
                 opacity: 1
+              },
+              {
+                layer: 'ships-icons',
+                duration: 1000,
+                opacity: 1
               }
             ],
             onChapterExit: [
               {
                 layer: 'fujairah-ships',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'ships-icons',
                 duration: 1000,
                 opacity: 0
               }
@@ -277,23 +240,27 @@ var config = {
             image: '',
             description: 'By August 2021, there were close to 24 suspected Iranian operations against vessels flagged from more than 12 countries.',
             location: {
-              center: [58.783763, 22.493531],
-              zoom: 5.6,
-              pitch: 31,
-              bearing: -9.77
+              center: [51.331551, 21.898902],
+              zoom: 4.8,
+              pitch: 42,
+              bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
               {
-                layer: 'maritime-tracker',
+                layer: 'counter-iranian-ops',
                 duration: 1000,
                 opacity: 1
               }
             ],
             onChapterExit: [
-
+              {
+                layer: 'counter-iranian-ops',
+                duration: 1000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -304,10 +271,10 @@ var config = {
             image: 'images/imsc_logo.png',
             description: 'In response, the U.S. announced it was putting together an International Maritime Security Construct to promote freedom of navigation. Eight countries are currently part of the Bahrain-based IMSC, which operates Task Force Sentinel: <ul><li>Albania</li><li>Bahrain</li><li>Estonia</li><li>Lithuania</li><li>Saudi Arabia</li><li>United Arab Emirates</li><li>United Kingdom</li><li>United States</li>',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
-              pitch: 0,
-              bearing: 0
+              center: [50.542852, 26.0493386],
+              zoom: 11,
+              pitch: 25,
+              bearing: 35
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -327,10 +294,10 @@ var config = {
             image: 'images/emasoh_logo.jpeg',
             description: 'In January 2020, several European governments set up a parallel mission, European Maritime Awareness in the Strait of Hormuz (EMASOH), headquartered in Abu Dhabi.<ul><li>Belgium</li><li>Denmark</li><li>France</li><li>Germany</li><li>Greece</li><li>Italy</li><li>The Netherlands</li><li>Portugal</li>',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
-              pitch: 0,
-              bearing: 0
+              center: [54.418536, 24.3870789],
+              zoom: 11,
+              pitch: 25,
+              bearing: 35
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -426,34 +393,30 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
-            callback: '',
+            callback: 'disableFreetime',
             onChapterEnter: [
-              {
-                layer: 'maritime-tracker',
-                duration: 1000,
-                opacity: 1
-              }
+
             ],
             onChapterExit: [
 
           ]
         },
         {
-            id: '15',
+            id: '16',
             alignment: 'left',
             hidden: false,
             title: 'Policy Recommendations',
             image: '',
             description: 'EMASOH and ISMC could increase coordination or merge to increase their capabilities. If the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran need not see these measures as yet another way to exert pressure on Iran. Still, as a precaution, the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could lead to confrontation.',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [43.894031, 23.574273],
+              zoom: 3.75,
               pitch: 0,
               bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
-            callback: '',
+            callback: 'enableFreetime',
             onChapterEnter: [
 
             ],
