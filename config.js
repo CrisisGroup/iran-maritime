@@ -8,7 +8,7 @@ var config = {
     title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg-oj.png" width="60" height="60" /></a><br /><h1>Rough Seas: Maritime Tensions in the Gulf</h1>',
     subtitle: '',
     byline: '',
-    footer: '<h4>Credits</h4><strong>Lead Contributor</strong>: Ali Vaez<br /><strong>Visualizations</strong>: Paul Franz<br /><strong>Support</strong>: Razi Arminian and Naysan Rafati<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
+    footer: '<h4>Credits</h4><strong>Lead Contributor</strong>: Ali Vaez<br /><strong>Visualizations</strong>: Paul Franz<br /><strong>Support</strong>: Naysan Rafati<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
     chapters: [
       {
           id: '00',
@@ -411,10 +411,18 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'iranian-ops',
+                duration: 1000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
-
+              {
+                layer: 'iranian-ops',
+                duration: 1000,
+                opacity: 0
+              }
           ]
         },
         {
@@ -422,7 +430,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: '',
+            image: 'images/red-sea-map.jpg',
             description: 'This brought out of the shadows a maritime front that is one of several across which Israel and Iran are at daggers drawn. A report by an Iranian outlet close to Iran’s national security establishment claimed that Iranian ships had been targeted 14 times in two years, mostly in the Red Sea and eastern Mediterranean.',
             location: {
               center: [12.234568, 23.422547],
@@ -461,11 +469,21 @@ var config = {
                 layer: 'mercer-street',
                 duration: 1000,
                 opacity: 1
+              },
+              {
+                layer: 'mercer-street-flag',
+                duration: 1000,
+                opacity: 1
               }
             ],
             onChapterExit: [
               {
                 layer: 'mercer-street',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'mercer-street-flag',
                 duration: 1000,
                 opacity: 0
               }
