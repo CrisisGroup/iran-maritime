@@ -454,7 +454,7 @@ var config = {
             hidden: false,
             title: 'Attack on Oil Tanker',
             image: 'images/mercer_street.jpg',
-            description: 'A July 2021 attack against the Mercer Street, a Liberian-flagged, Japanese-owned vessel linked to Israeli ownership, was a notable escalation. It was deadly, killing the ship’s Romanian master and a UK citizen. And it was widely attributed to Iran, including by the G-7 and EU. And it was widely attributed to Iran, including by the G-7 and EU. But Tehran dismissed what it called "bogus allegations".',
+            description: 'A July 2021 attack against the Mercer Street, a Liberian-flagged, Japanese-owned vessel linked to Israeli ownership, was a notable escalation. It was deadly, killing the ship’s Romanian master and a UK citizen. And it was widely attributed to Iran, including by the G-7 and EU. But Tehran dismissed what it called "bogus allegations".',
             location: {
               center: [59.522652, 21.139930],
               zoom: 9.45,
