@@ -9,7 +9,11 @@ p {
   line-height: 1.4286;
   color: #e4e4e4;
 }
-a, a:hover, a:visited {
+a {
+  color: #E87722;
+}
+
+a:hover, a:visited {
     color: #0071bc;
 }
 #map {

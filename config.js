@@ -17,7 +17,7 @@ var config = {
           hidden: false,
           title: '',
           image: '',
-          description: 'Since 2019, maritime tensions around involving Iran  have grown more pronounced, with dozens of confirmed or suspected incidents in a multidimensional shadow war playing out from the Indian Ocean to the Mediterranean.',
+          description: 'Since 2019, maritime tensions involving Iran have grown more pronounced, with dozens of confirmed or suspected incidents in a multidimensional shadow war playing out from the Indian Ocean to the Mediterranean.',
           location: {
             center: [44.750101, 27.807322],
             zoom: 3.5,
@@ -180,7 +180,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then no oil will be exported from the Persian Gulf”.</h2>- Iranian President Hassan Rouhani',
+            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then no oil will be exported from the Persian Gulf”.</h2>- Former Iranian President Hassan Rouhani, December 2018',
             location: {
               center: [12.234568, 23.422547],
               zoom: 2,
