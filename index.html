@@ -28,9 +28,10 @@
 		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 		<meta name="author" content="International Crisis Group">
 		<meta property="article:published_time" content="2021-12-09T07:00:00+00:00" />
-		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
-		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
-		<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2-globe.beta/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2-globe.beta/mapbox-gl.js"></script>
 		<script src="https://unpkg.com/scrollama"></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;900&display=swap" rel="stylesheet">
@@ -210,7 +211,8 @@ var map = new mapboxgl.Map({
 		bearing: config.chapters[0].location.bearing,
 		pitch: config.chapters[0].location.pitch,
 		interactive: false,
-		transformRequest: transformRequest
+		transformRequest: transformRequest,
+		projection: config.projection
 });
 
 var insetConfig = [49.950464, 26.711054];

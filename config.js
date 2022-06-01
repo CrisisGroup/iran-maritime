@@ -4,6 +4,7 @@ var config = {
     showMarkers: false,
     markerColor: '#3FB1CE',
     theme: 'light',
+    projection: 'globe',
     use3dTerrain: true,
     title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg-oj.png" width="60" height="60" /></a><br /><h1>Rough Seas: Maritime Tensions in the Gulf</h1>',
     subtitle: '',
