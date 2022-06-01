@@ -1,5 +1,5 @@
 var config = {
-    style: 'mapbox://styles/daltonwb/cl08q3p8j001a15nx5j4r2bee',
+    style: 'mapbox://styles/daltonwb/cl3vpgeh5003w16ms7dqdajyr',
     accessToken: 'pk.eyJ1IjoiZGFsdG9ud2IiLCJhIjoiOWdSSXFQSSJ9.HZyjh4g3TAAOAncwelv9Vw',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -132,8 +132,8 @@ var config = {
             image: '',
             description: 'A spate of attacks against commercial tankers in May 2019 marked the start of a two-pronged Iranian response to the U.S. “maximum pressure” campaign, which significantly interrupted Iran’s oil export, a key revenue source for Tehran.',
             location: {
-              center: [43.894031, 23.574273],
-              zoom: 3.75,
+              center: [44.090466, 24.903992],
+              zoom: 4.25,
               pitch: 0,
               bearing: 0
             },
@@ -155,8 +155,8 @@ var config = {
             image: '',
             description: '<a href="Averting the Middle East’s 1914 Moment" target="_blank">Iranian political and military officials had for months threatened</a> that U.S. curtailment of its energy sales would not go without a response.',
             location: {
-              center: [43.894031, 23.574273],
-              zoom: 3.75,
+              center: [44.090466, 24.903992],
+              zoom: 4.25,
               pitch: 0,
               bearing: 0
             },
@@ -182,8 +182,8 @@ var config = {
             image: '',
             description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then no oil will be exported from the Persian Gulf”.</h2>- Former Iranian President Hassan Rouhani, December 2018',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [49.1940636, 32.2242379],
+              zoom: 6,
               pitch: 0,
               bearing: 0
             },
@@ -380,8 +380,8 @@ var config = {
             image: '',
             description: 'Meanwhile, brief reports would emerge from time to time about vague incidents aboard Iranian vessels - technical malfunctions, unexplained outages. For example, on 30 April 2019 - less than two weeks before the Furaijah attacks - an Iranian tanker suffered what was described as an engine failure in the Red Sea. But later that year, it told the International Maritime Organization that the Happiness-1 had actually been attacked.',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [41.024142, 17.706115],
+              zoom: 4,
               pitch: 0,
               bearing: 0
             },
@@ -403,8 +403,8 @@ var config = {
             image: 'images/wsj.jpg',
             description: 'In March 2021, the WSJ revealed that in fact, since 2019 at least a dozen attacks had been carried out by Israel against Iranian vessels.',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [40.971, 25.829],
+              zoom: 4.8,
               pitch: 0,
               bearing: 0
             },
@@ -428,14 +428,14 @@ var config = {
         },
         {
             id: '14',
-            alignment: 'left',
+            alignment: 'center',
             hidden: false,
             title: '',
             image: 'images/red-sea-map.jpg',
             description: 'This brought out of the shadows a maritime front that is one of several across which Israel and Iran are at daggers drawn. A report by an Iranian outlet close to Iran’s national security establishment claimed that Iranian ships had been targeted 14 times in two years, mostly in the Red Sea and eastern Mediterranean.',
             location: {
-              center: [12.234568, 23.422547],
-              zoom: 2,
+              center: [40.971, 25.829],
+              zoom: 4.8,
               pitch: 0,
               bearing: 0
             },
