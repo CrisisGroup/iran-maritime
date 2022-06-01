@@ -57,10 +57,9 @@
 	<div class="progress-container">
 			<div class="progress-bar" id="myBar"></div>
 	</div>
-<div id="mapInset"></div>
+
 	<div id="map"></div>
 
-	<div id="story"></div>
 
 	<div id='Chapter02legend' class='legend'>
 <h4>Naval Incidents</h4>
@@ -71,11 +70,14 @@
 <h5><strong>Data</strong>: <a href='https://www.crisisgroup.org' target='_blank'>International Crisis Group</a></h5>
 </div>
 
+	<div id="mapInset"></div>
+	<div id="story"></div>
+
 <script src="./config.js"></script>
 
 <script>
-
-var layerTypes = {
+  var initLoad = true;
+	var layerTypes = {
 		'fill': ['fill-opacity'],
 		'line': ['line-opacity'],
 		'circle': ['circle-opacity', 'circle-stroke-opacity'],
@@ -215,16 +217,20 @@ var map = new mapboxgl.Map({
 		projection: config.projection
 });
 
-var insetConfig = [49.950464, 26.711054];
-
-var mapInset = new mapboxgl.Map({
-    container: 'mapInset',
-    style: 'mapbox://styles/daltonwb/ckxcpfigx45vi14mfdk2qjhve',
-    center: insetConfig,
-    interactive: false,
-    zoom: config.chapters[0].location.zoom,
-    attributionControl: false
-});
+// Create a inset map if enabled in config.js
+if (config.inset) {
+ var insetMap = new mapboxgl.Map({
+		container: 'mapInset', // container id
+		style: 'mapbox://styles/mapbox/dark-v10', //hosted style id
+		center: config.chapters[0].location.center,
+		// Hardcode above center value if you want insetMap to be static.
+		zoom: 3, // starting zoom
+		hash: false,
+		interactive: false,
+		projection: 'globe',
+		attributionControl: false
+	});
+}
 
 if (config.showMarkers) {
 		var marker = new mapboxgl.Marker({ color: config.markerColor });
@@ -247,6 +253,11 @@ map.on("load", function() {
 					'source': 'mapbox-dem',
 					'exaggeration': 1.5
 				});
+
+				// As the map moves, grab and update bounds in inset map.
+				if (config.inset) {
+				map.on('move', getInsetBounds);
+				}
 
 				// add a sky layer that will show when the map is highly pitched
 				map.addSource('places', {
@@ -801,55 +812,44 @@ map.on("load", function() {
 				var chapter = config.chapters.find(chap => chap.id === response.element.id);
 				var chapterid = chapter.id;
 
-
-				if ((chapterid == "INTRO") || (chapterid == "CNUS1")) {
-					$("#mapInset").css({opacity: 0});
-				}
-				 else
-				 	$("#mapInset").css({opacity: 1});
-
 					if ((chapterid == "02") || (chapterid == "03") || (chapterid == "05") || (chapterid == "16")) {
 		 $("#Chapter02legend").show("slow");
 } else
 		 $("#Chapter02legend").hide("fast");
 
-
-					if (chapterid == "00") {
-						mapInset.fitBounds([
-							[13.177859,9.960352],
-							[82.391726,42.934022]
-						]);
-					}
-
-						if (chapterid == "01") {
-							mapInset.fitBounds([
-								[54.081347,25.458786],
-								[58.407214,27.562472]
-							]);
-							}
-
-				response.element.classList.add('active');
-				map[chapter.mapAnimation || 'flyTo'](chapter.location);
-				if (config.showMarkers) {
-						marker.setLngLat(chapter.location.center);
-				}
-				if (chapter.onChapterEnter.length > 0) {
-						chapter.onChapterEnter.forEach(setLayerOpacity);
-				}
-				if (chapter.callback) {
-						window[chapter.callback]();
-				}
-				if (chapter.rotateAnimation) {
-						map.once('moveend', function() {
-								const rotateNumber = map.getBearing();
-								map.rotateTo(rotateNumber + 90, {
-										duration: 24000, easing: function (t) {
-												return t;
-										}
-								});
-						});
-				}
-		})
+		 response.element.classList.add('active');
+	 	map[chapter.mapAnimation || 'flyTo'](chapter.location);
+	 	// Incase you do not want to have a dynamic inset map,
+	 	// rather want to keep it a static view but still change the
+	 	// bbox as main map move: comment out the below if section.
+	 	if (config.inset) {
+	 		if (chapter.location.zoom < 5) {
+	 			insetMap.flyTo({center: chapter.location.center, zoom: 0});
+	 		}
+	 		else {
+	 			insetMap.flyTo({center: chapter.location.center, zoom: 3});
+	 		}
+	 	}
+	 	if (config.showMarkers) {
+	 			marker.setLngLat(chapter.location.center);
+	 	}
+	 	if (chapter.onChapterEnter.length > 0) {
+	 			chapter.onChapterEnter.forEach(setLayerOpacity);
+	 	}
+	 	if (chapter.callback) {
+	 			window[chapter.callback]();
+	 	}
+	 	if (chapter.rotateAnimation) {
+	 			map.once('moveend', () => {
+	 					const rotateNumber = map.getBearing();
+	 					map.rotateTo(rotateNumber + 180, {
+	 							duration: 30000, easing: function (t) {
+	 									return t;
+	 							}
+	 					});
+	 			});
+	 	}
+	 })
 		.onStepExit(response => {
 				var chapter = config.chapters.find(chap => chap.id === response.element.id);
 				response.element.classList.remove('active');
@@ -858,6 +858,87 @@ map.on("load", function() {
 				}
 		});
 });
+
+//Helper functions for insetmap
+function getInsetBounds() {
+						let bounds = map.getBounds();
+
+						let boundsJson = {
+								"type": "FeatureCollection",
+								"features": [{
+										"type": "Feature",
+										"properties": {},
+										"geometry": {
+												"type": "Polygon",
+												"coordinates": [
+														[
+																[
+																		bounds._sw.lng,
+																		bounds._sw.lat
+																],
+																[
+																		bounds._ne.lng,
+																		bounds._sw.lat
+																],
+																[
+																		bounds._ne.lng,
+																		bounds._ne.lat
+																],
+																[
+																		bounds._sw.lng,
+																		bounds._ne.lat
+																],
+																[
+																		bounds._sw.lng,
+																		bounds._sw.lat
+																]
+														]
+												]
+										}
+								}]
+						}
+
+						if (initLoad) {
+								addInsetLayer(boundsJson);
+								initLoad = false;
+						} else {
+								updateInsetLayer(boundsJson);
+						}
+
+				}
+
+function addInsetLayer(bounds) {
+		insetMap.addSource('boundsSource', {
+				'type': 'geojson',
+				'data': bounds
+		});
+
+		insetMap.addLayer({
+				'id': 'boundsLayer',
+				'type': 'fill',
+				'source': 'boundsSource', // reference the data source
+				'layout': {},
+				'paint': {
+						'fill-color': '#fff', // blue color fill
+						'fill-opacity': 0.2
+				}
+		});
+		// // Add a black outline around the polygon.
+		insetMap.addLayer({
+				'id': 'outlineLayer',
+				'type': 'line',
+				'source': 'boundsSource',
+				'layout': {},
+				'paint': {
+						'line-color': '#000',
+						'line-width': 1
+				}
+		});
+}
+
+function updateInsetLayer(bounds) {
+		insetMap.getSource('boundsSource').setData(bounds);
+}
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
