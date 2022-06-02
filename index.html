@@ -8,13 +8,13 @@
 <link rel="icon" type="image/x-icon" href="https://conflicts2022.crisisgroup.org/images/favicon.ico"> -->
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Iran Maritime Tracker" />
+<meta name="twitter:title" content="Tracking Maritime Tensions with Iran" />
 <meta name="twitter:description" content="Tracking Iran's naval clashes." />
 <meta name="twitter:site" content="@crisisgroup" />
 <meta name="twitter:image" content="https://conflicts2022.crisisgroup.org/images/twitter_climate_icg.jpg" />
 <meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Iran Maritime Tracker | International Crisis Group" />
+	<meta property="og:title" content="Rough Seas: Tracking Maritime Tensions with Iran | International Crisis Group" />
 	<meta property="og:description" content="International Crisis Group names the top 10 conflicts to watch in 2022." />
 	<!-- <meta property="og:url" content="https://conflicts2022.crisisgroup.org" />
 	<meta property="og:site_name" content="International Crisis Group" />
@@ -59,7 +59,6 @@
 	</div>
 
 	<div id="map"></div>
-
 
 	<div id='Chapter02legend' class='legend'>
 <h4>Naval Incidents</h4>
@@ -999,6 +998,15 @@ function disableFreetime() {
     }
   }
 }
+
+$(document).ready(function() {
+		$("a#freeExplore").click(function(event) {
+				event.preventDefault();
+				$("html, body").animate({
+						scrollTop: $($(this).attr("href")).offset().top
+					}, 500);
+			});
+	});
 
 </script>
 
