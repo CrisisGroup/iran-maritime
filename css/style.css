@@ -181,15 +181,16 @@ ul {
 /* Legend CSS */
 
 .legend {
+    border-radius: 5px;
     position: fixed;
     bottom: 30px;
     color: #E4E4E4;
     background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
     padding: 10px;
-    display:none;
+    display: none;
     z-index: 1;
-    margin-left: 30vw;
+    margin-left: 5vw;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     font-size: small;
@@ -239,6 +240,32 @@ ul.legend-ul li {
     margin-right: 5px;
 }
 
+#freeExplore {
+  background-color: #003E51;
+      border-radius: 10px;
+      border: none;
+      color: white;
+      padding: 20px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 25px 2px;
+      cursor: pointer;
+      display: block;
+}
+
+#freeExplore:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#freeExplore.active {
+    background-color: #fff;
+    color: #000;
+}
 
 /* Fix issue on mobile browser where scroll breaks  */
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,

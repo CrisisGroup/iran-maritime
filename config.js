@@ -7,7 +7,7 @@ var config = {
     theme: 'light',
     projection: 'globe',
     use3dTerrain: true,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg-oj.png" width="60" height="60" /></a><br /><h1>Rough Seas: Maritime Tensions in the Gulf</h1>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg-oj.png" width="60" height="60" /></a><br /><h1>Rough Seas: Tracking Maritime Tensions with Iran</h1>',
     subtitle: '',
     byline: '',
     footer: '<h4>Credits</h4><strong>Lead Contributor</strong>: Ali Vaez<br /><strong>Visualizations</strong>: Paul Franz<br /><strong>Support</strong>: Naysan Rafati<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
@@ -497,7 +497,7 @@ var config = {
             hidden: false,
             title: 'Policy Recommendations',
             image: '',
-            description: 'EMASOH and ISMC could increase coordination or merge to increase their capabilities. If the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran need not see these measures as yet another way to exert pressure on Iran. Still, as a precaution, the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could lead to confrontation.<br /><br /><strong>Explore & find more insights with our dataset</strong>. Just drag and zoom to go where you want, or <a href="#15">return to the story above by clicking here</a>.',
+            description: 'EMASOH and ISMC could increase coordination or merge to increase their capabilities. If the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran need not see these measures as yet another way to exert pressure on Iran. Still, as a precaution, the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could lead to confrontation.<br /><br /><strong>Explore & find more insights with our dataset</strong>. Zoom using the tools in the top right and click on individual points for more data.' + '<a id="freeExplore" href="#15">Return to the story ↑ </a>',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,
