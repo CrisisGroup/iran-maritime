@@ -59,7 +59,7 @@ var config = {
             hidden: false,
             title: 'A Global Chokepoint',
             image: 'images/hormuz.png',
-            description: 'Nearly one-fifth of the world’s oil, and a quarter of its liquified natural gas, flows through the Strait of Hormuz. More than forty thousand ships each year. But this chokepoint and the waters around it are also a major geopolitical flashpoint.',
+            description: 'Nearly one-fifth of the world’s oil, and a quarter of its liquified natural gas, flows through the Strait of Hormuz. More than forty thousand ships each year. This chokepoint and the waters around it have long been a major geopolitical flashpoint.',
             location: {
               center: [55.604979, 25.750385],
               zoom: 6.75,
@@ -181,7 +181,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then no oil will be exported from the Persian Gulf”.</h2>- Former Iranian President Hassan Rouhani, December 2018',
+            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then <em>no oil will be exported from the Persian Gulf</em>”.</h2>- Former Iranian President Hassan Rouhani &dash; December 2018',
             location: {
               center: [49.1940636, 32.2242379],
               zoom: 6,
@@ -274,7 +274,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'By August 2021, there were close to 24 suspected Iranian operations against vessels flagged from more than 12 countries.',
+            description: 'By August 2021, there were nearly two dozen suspected Iranian operations against vessels flagged from an array of countries, ranging from East Asia to the Caribbean and of equally varying ownership.',
             location: {
               center: [51.331551, 21.898902],
               zoom: 4.8,
@@ -315,7 +315,7 @@ var config = {
             hidden: false,
             title: '',
             image: 'images/imsc_logo.png',
-            description: 'In response, the U.S. announced it was putting together an International Maritime Security Construct to promote freedom of navigation. Eight countries are currently part of the Bahrain-based IMSC, which operates Task Force Sentinel: <ul><li>Albania</li><li>Bahrain</li><li>Estonia</li><li>Lithuania</li><li>Saudi Arabia</li><li>United Arab Emirates</li><li>United Kingdom</li><li>United States</li>',
+            description: 'In response, the U.S. announced it was putting together an International Maritime Security Construct to promote freedom of navigation. Nine countries are currently part of the Bahrain-based IMSC, which operates Task Force Sentinel: <ul><li>Albania</li><li>Bahrain</li><li>Estonia</li><li>Lithuania</li><li>Romania</li><li>Saudi Arabia</li><li>United Arab Emirates</li><li>United Kingdom</li><li>United States</li></ul>Sentinel’s area of operations includes both the Strait of Hormuz and the Bab al-Mandeb, another major chokepoint.',
             location: {
               center: [50.542852, 26.0493386],
               zoom: 11,
@@ -379,7 +379,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Meanwhile, brief reports would emerge from time to time about vague incidents aboard Iranian vessels - technical malfunctions, unexplained outages. For example, on 30 April 2019 - less than two weeks before the Furaijah attacks - an Iranian tanker suffered what was described as an engine failure in the Red Sea. But later that year, it told the International Maritime Organization that the Happiness-1 had actually been attacked.',
+            description: 'Meanwhile, brief reports would emerge from time to time about vague incidents aboard Iranian vessels - technical malfunctions, unexplained outages. For example, on 30 April 2019 - less than two weeks before the Furaijah attacks - an Iranian tanker suffered what was described as an engine failure in the Red Sea. But later that year, Tehran told the International Maritime Organization that the Happiness-1 had actually been attacked.',
             location: {
               center: [41.024142, 17.706115],
               zoom: 4,
@@ -402,7 +402,7 @@ var config = {
             hidden: false,
             title: '',
             image: 'images/wsj.jpg',
-            description: 'In March 2021, the WSJ revealed that in fact, since 2019 at least a dozen attacks had been carried out by Israel against Iranian vessels.',
+            description: 'In March 2021, the Wall Street Journal revealed that at least a dozen attacks had been carried out by Israel against Iranian vessels since 2019.',
             location: {
               center: [40.971, 25.829],
               zoom: 4.8,
@@ -433,7 +433,7 @@ var config = {
             hidden: false,
             title: '',
             image: 'images/red-sea-map.jpg',
-            description: 'This brought out of the shadows a maritime front that is one of several across which Israel and Iran are at daggers drawn. A report by an Iranian outlet close to Iran’s national security establishment claimed that Iranian ships had been targeted 14 times in two years, mostly in the Red Sea and eastern Mediterranean.',
+            description: 'This brought out of the shadows a maritime front that is one of several across which Israel and Iran are sparring with one another. A report by an Iranian outlet close to Iran’s national security establishment claimed that Israel had targeted Iranian ships 14 times in two years, mostly in the Red Sea and eastern Mediterranean.',
             location: {
               center: [40.971, 25.829],
               zoom: 4.8,
@@ -456,7 +456,7 @@ var config = {
             hidden: false,
             title: 'Attack on Oil Tanker',
             image: 'images/mercer_street.jpg',
-            description: 'A July 2021 attack against the Mercer Street, a Liberian-flagged, Japanese-owned vessel linked to Israeli ownership, was a notable escalation. It was deadly, killing the ship’s Romanian master and a UK citizen. And it was widely attributed to Iran, including by the G-7 and EU. But Tehran dismissed what it called "bogus allegations".',
+            description: 'A July 2021 attack against the Mercer Street, a Liberian-flagged, Japanese-owned vessel linked to Israeli ownership, was a notable escalation. It was deadly, killing the ship’s Romanian master and a UK citizen. And it was widely attributed to Iran, including by the G-7 and EU. But Tehran dismissed what it called "bogus allegations". More recently, the Revolutionary Guards responded to the U.S. seizure of an Iranian crude shipment by detaining two Greek-flagged vessels.',
             location: {
               center: [59.522652, 21.139930],
               zoom: 9.45,
@@ -465,7 +465,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
-            callback: 'disableFreetime',
+            callback: '',
             onChapterEnter: [
               {
                 layer: 'mercer-street',
@@ -497,7 +497,28 @@ var config = {
             hidden: false,
             title: 'Policy Recommendations',
             image: '',
-            description: 'EMASOH and ISMC could increase coordination or merge to increase their capabilities. If the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran need not see these measures as yet another way to exert pressure on Iran. Still, as a precaution, the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could lead to confrontation.<br /><br /><strong>Explore & find more insights with our dataset</strong>. Zoom using the tools in the top right and click on individual points for more data.' + '<a id="freeExplore" href="#15">Return to the story ↑ </a>',
+            description: 'The specific entanglements between Iran and Israel, and the wider tension around international shipping, are not necessarily coordinated, although Iran is likely to see it that way. Regardless, they both highlight the possibility for individual incidents to spin out of control, setting off a wider confrontation. Indeed, the recent uptick in maritime tension underscores a dangerous lose-lose dynamic: enforcement of sanctions, likely to increase so long as Tehran and Washington remain at loggerheads over reviving the 2015 nuclear deal, prevents Iran from normalising its oil trade. In turn, Iran increases its provocations against international shipping. <br /><br />These tit-for-tat exchanges raise the risk of escalation while serving neither side’s interests. Defusing the core point of contention through diplomacy, while bolstering regional dialogues that lower the temperature between Iran and Gulf Arab states, is sorely needed. <br /><br />At the same time, greater multilateral action to protect international shipping can complement these negotiations. EMASOH and ISMC could increase coordination or merge to increase their capabilities. But even if the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran is likely to see these measures as yet another way to exert pressure on Iran. That is why the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could swiftly escalate to direct confrontation.',
+            location: {
+              center: [43.894031, 23.574273],
+              zoom: 3.75,
+              pitch: 0,
+              bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: 'disableFreetime',
+            onChapterEnter: [],
+            onChapterExit: [
+
+          ]
+        },
+        {
+            id: '17',
+            alignment: 'left',
+            hidden: false,
+            title: 'In Depth: Explore the Data',
+            image: '',
+            description: '<strong>Explore & find more insights with our dataset</strong>. Zoom using the tools in the top right and click on individual points for more data.' + '<a id="freeExplore" href="#16">Return to the story ↑ </a>',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,
