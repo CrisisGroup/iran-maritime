@@ -7,10 +7,10 @@ var config = {
     theme: 'light',
     projection: 'globe',
     use3dTerrain: true,
-    title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg-oj.png" width="60" height="60" /></a><br /><h1>Rough Seas: Tracking Maritime Tensions with Iran</h1>',
+    title: '<a href="https://www.crisisgroup.org" target="_blank"><img src="images/icg-oj.png" width="100" height="100" /></a><br /><h1>Rough Seas: Tracking Maritime Tensions with Iran</h1>',
     subtitle: '',
     byline: '',
-    footer: '<h4>Credits</h4><strong>Lead Contributor</strong>: Ali Vaez<br /><strong>Visualizations</strong>: Paul Franz<br /><strong>Support</strong>: Naysan Rafati<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
+    footer: '<h4>Credits</h4><strong>Lead Contributor</strong>: Ali Vaez<br /><strong>Visualizations</strong>: Paul Franz and Claire Boccon-Gibod<br /><strong>Support</strong>: Naysan Rafati<br /><br /><h4>Data Sources</h4> <div class="data-sources"><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a><br /><a href="https://www.mapbox.com" target="_blank">Mapbox</a> and <a href="https://www.mapbox.com/community" target="_blank">Mapbox Community Team</a><br /><br /><a href="https://www.crisisgroup.org/legal" target="_blank">Privacy Policy & Legal</a></div>',
     chapters: [
       {
           id: '00',
@@ -181,7 +181,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then <em>no oil will be exported from the Persian Gulf</em>”.</h2>- Former Iranian President Hassan Rouhani &dash; December 2018',
+            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then <em>no oil will be exported from the Persian Gulf</em> ”.</h2>&dash; Former Iranian President Hassan Rouhani &dash; December 2018',
             location: {
               center: [49.1940636, 32.2242379],
               zoom: 6,
@@ -379,7 +379,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Meanwhile, brief reports would emerge from time to time about vague incidents aboard Iranian vessels - technical malfunctions, unexplained outages. For example, on 30 April 2019 - less than two weeks before the Furaijah attacks - an Iranian tanker suffered what was described as an engine failure in the Red Sea. But later that year, Tehran told the International Maritime Organization that the Happiness-1 had actually been attacked.',
+            description: 'Meanwhile, brief reports would emerge from time to time about vague incidents aboard Iranian vessels &dash; technical malfunctions, unexplained outages. For example, on 30 April 2019 &dash; less than two weeks before the Furaijah attacks &dash; an Iranian tanker suffered what was described as an engine failure in the Red Sea. But later that year, Tehran told the International Maritime Organization that the Happiness-1 had actually been attacked.',
             location: {
               center: [41.024142, 17.706115],
               zoom: 4,
@@ -456,7 +456,7 @@ var config = {
             hidden: false,
             title: 'Attack on Oil Tanker',
             image: 'images/mercer_street.jpg',
-            description: 'A July 2021 attack against the Mercer Street, a Liberian-flagged, Japanese-owned vessel linked to Israeli ownership, was a notable escalation. It was deadly, killing the ship’s Romanian master and a UK citizen. And it was widely attributed to Iran, including by the G-7 and EU. But Tehran dismissed what it called "bogus allegations". More recently, the Revolutionary Guards responded to the U.S. seizure of an Iranian crude shipment by detaining two Greek-flagged vessels.',
+            description: 'A July 2021 attack against the Mercer Street, a Liberian-flagged, Japanese-owned vessel linked to Israeli ownership, was a notable escalation. It was deadly, killing the ship’s Romanian master and a UK citizen. And it was widely attributed to Iran, including by the G-7 and EU. But Tehran dismissed what it called "bogus allegations".',
             location: {
               center: [59.522652, 21.139930],
               zoom: 9.45,
@@ -492,12 +492,53 @@ var config = {
           ]
         },
         {
-            id: '16',
+            id: '15B',
             alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'More recently, the Revolutionary Guards responded to the U.S. seizure of an Iranian crude shipment by detaining two Greek-flagged vessels in May 2022.',
+            location: {
+              center: [53.552, 26.125],
+              zoom: 7.3,
+              pitch: 0,
+              bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+              {
+                layer: 'greek-flag',
+                duration: 1000,
+                opacity: 1
+              },
+              {
+                layer: 'greek-vessels',
+                duration: 1000,
+                opacity: 1
+              }
+            ],
+            onChapterExit: [
+              {
+                layer: 'greek-flag',
+                duration: 1000,
+                opacity: 0
+              },
+              {
+                layer: 'greek-vessels',
+                duration: 1000,
+                opacity: 0
+              }
+          ]
+        },
+        {
+            id: '16',
+            alignment: 'center',
             hidden: false,
             title: 'Policy Recommendations',
             image: '',
-            description: 'The specific entanglements between Iran and Israel, and the wider tension around international shipping, are not necessarily coordinated, although Iran is likely to see it that way. Regardless, they both highlight the possibility for individual incidents to spin out of control, setting off a wider confrontation. Indeed, the recent uptick in maritime tension underscores a dangerous lose-lose dynamic: enforcement of sanctions, likely to increase so long as Tehran and Washington remain at loggerheads over reviving the 2015 nuclear deal, prevents Iran from normalising its oil trade. In turn, Iran increases its provocations against international shipping. <br /><br />These tit-for-tat exchanges raise the risk of escalation while serving neither side’s interests. Defusing the core point of contention through diplomacy, while bolstering regional dialogues that lower the temperature between Iran and Gulf Arab states, is sorely needed. <br /><br />At the same time, greater multilateral action to protect international shipping can complement these negotiations. EMASOH and ISMC could increase coordination or merge to increase their capabilities. But even if the participating states are transparent about their intentions – namely protecting shipping and the free flow of commerce - Tehran is likely to see these measures as yet another way to exert pressure on Iran. That is why the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could swiftly escalate to direct confrontation.',
+            description: 'The specific entanglements between Iran and Israel, and the wider tension around international shipping, are not necessarily coordinated, although Iran is likely to see it that way. Regardless, they both highlight the possibility for individual incidents to spin out of control, setting off a wider confrontation. Indeed, the recent uptick in maritime tension underscores a dangerous lose-lose dynamic: enforcement of sanctions, likely to increase so long as Tehran and Washington remain at loggerheads over reviving the 2015 nuclear deal, prevents Iran from normalising its oil trade. In turn, Iran increases its provocations against international shipping. <br /><br />These tit-for-tat exchanges raise the risk of escalation while serving neither side’s interests. Defusing the core point of contention through diplomacy, while bolstering regional dialogues that lower the temperature between Iran and Gulf Arab states, is sorely needed. <br /><br />At the same time, greater multilateral action to protect international shipping can complement these negotiations. EMASOH and ISMC could increase coordination or merge to increase their capabilities. But even if the participating states are transparent about their intentions &dash; namely protecting shipping and the free flow of commerce &dash; Tehran is likely to see these measures as yet another way to exert pressure on Iran. That is why the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could swiftly escalate to direct confrontation.',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,
