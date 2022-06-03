@@ -63,8 +63,8 @@
 	<div id='Chapter02legend' class='legend'>
 <h4>Naval Incidents</h4>
 <ul class='legend-ul'>
-	<li><div><span style='background-color: #1e802d; border: solid 1px #fff; border-radius: 50px; width: 10px; height: 10px;'></span>Operations against international vessels </div></li>
-	<li><div><span style='background-color: #931b1b; border: solid 1px #fff; border-radius: 50px; width: 10px; height: 10px;'></span>Operations against Iranian vessels </div></li>
+	<li><div><span style='background-color: #80B9B3; border: solid 1px #fff; border-radius: 50px; width: 10px; height: 10px;'></span>Operations against international vessels </div></li>
+	<li><div><span style='background-color: #A4343A; border: solid 1px #fff; border-radius: 50px; width: 10px; height: 10px;'></span>Operations against Iranian vessels </div></li>
 </ul>
 <h5><strong>Data</strong>: <a href='https://www.crisisgroup.org' target='_blank'>International Crisis Group</a></h5>
 </div>
@@ -216,11 +216,10 @@ var map = new mapboxgl.Map({
 		projection: config.projection
 });
 
-// Create a inset map if enabled in config.js
 if (config.inset) {
  var insetMap = new mapboxgl.Map({
 		container: 'mapInset', // container id
-		style: 'mapbox://styles/mapbox/dark-v10', //hosted style id
+		style: 'mapbox://styles/daltonwb/cl3ykkmof001p14mwr83dbkf0', //hosted style id
 		center: config.chapters[0].location.center,
 		// Hardcode above center value if you want insetMap to be static.
 		zoom: 3, // starting zoom
@@ -918,8 +917,8 @@ function addInsetLayer(bounds) {
 				'source': 'boundsSource', // reference the data source
 				'layout': {},
 				'paint': {
-						'fill-color': '#fff', // blue color fill
-						'fill-opacity': 0.2
+						'fill-color': '#ccc', // blue color fill
+						'fill-opacity': 0.4
 				}
 		});
 		// // Add a black outline around the polygon.
