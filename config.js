@@ -181,7 +181,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then <em>no oil will be exported from the Persian Gulf</em> ”.</h2>&dash; Former Iranian President Hassan Rouhani &dash; December 2018',
+            description: '<h2 class="liftout">“America should know that we are selling our oil and will continue to sell our oil and they are not able to stop our oil exports… if one day they want to prevent the export of Iran’s oil then <span style="font-weight: 900;">no oil will be exported from the Persian Gulf</span>”.</h2>&dash; Former Iranian President Hassan Rouhani &dash; December 2018',
             location: {
               center: [49.1940636, 32.2242379],
               zoom: 6,
