@@ -534,7 +534,7 @@ var config = {
         },
         {
             id: '16',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: 'Policy Recommendations',
             image: '',
