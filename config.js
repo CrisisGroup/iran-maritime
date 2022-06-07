@@ -142,7 +142,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'maritime-tracker',
+                duration: 1000,
+                opacity: 1
+              }
             ],
             onChapterExit: [
 
@@ -346,7 +350,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: 'images/emasoh_logo.jpeg',
+            image: 'images/emasoh_logo.png',
             description: 'In January 2020, several European governments set up a parallel mission, European Maritime Awareness in the Strait of Hormuz (EMASOH), headquartered in Abu Dhabi.<ul><li>Belgium</li><li>Denmark</li><li>France</li><li>Germany</li><li>Greece</li><li>Italy</li><li>The Netherlands</li><li>Portugal</li>',
             location: {
               center: [54.418536, 24.3870789],
@@ -538,7 +542,7 @@ var config = {
             hidden: false,
             title: 'Policy Recommendations',
             image: '',
-            description: 'The specific entanglements between Iran and Israel, and the wider tension around international shipping, are not necessarily coordinated, although Iran is likely to see it that way. Regardless, they both highlight the possibility for individual incidents to spin out of control, setting off a wider confrontation. Indeed, the recent uptick in maritime tension underscores a dangerous lose-lose dynamic: enforcement of sanctions, likely to increase so long as Tehran and Washington remain at loggerheads over reviving the 2015 nuclear deal, prevents Iran from normalising its oil trade. In turn, Iran increases its provocations against international shipping. <br /><br />These tit-for-tat exchanges raise the risk of escalation while serving neither side’s interests. Defusing the core point of contention through diplomacy, while bolstering regional dialogues that lower the temperature between Iran and Gulf Arab states, is sorely needed. <br /><br />At the same time, greater multilateral action to protect international shipping can complement these negotiations. EMASOH and ISMC could increase coordination or merge to increase their capabilities. But even if the participating states are transparent about their intentions &dash; namely protecting shipping and the free flow of commerce &dash; Tehran is likely to see these measures as yet another way to exert pressure on Iran. That is why the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side, including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could swiftly escalate to direct confrontation.',
+            description: 'The specific entanglements between Iran and Israel, and the wider tension around international shipping, are not necessarily coordinated, although Iran is likely to see it that way. Regardless, they both highlight the possibility for' + '<span style="color: #E87722; font-weight: bold;">individual incidents to spin out of control</span>' + ', setting off a wider confrontation.' + '<br /><br />' + 'Indeed, the recent uptick in maritime tension underscores a dangerous lose-lose dynamic: enforcement of sanctions, likely to increase so long as Tehran and Washington remain at loggerheads over reviving the 2015 nuclear deal, prevents Iran from normalising its oil trade. In turn, Iran increases its provocations against international shipping. <br /><br />These tit-for-tat exchanges raise the risk of escalation while serving neither side’s interests.' + '<span style="color: #E87722; font-weight: bold;">Defusing the core point of contention through diplomacy, while bolstering regional dialogues that lower the temperature between Iran and Gulf Arab states</span>, is sorely needed.' + '<br /><br />' + 'At the same time, greater multilateral action to protect international shipping can complement these negotiations. EMASOH and ISMC could increase coordination or merge to increase their capabilities. But even if the participating states are transparent about their intentions &dash; namely protecting shipping and the free flow of commerce &dash; Tehran is likely to see these measures as yet another way to exert pressure on Iran. That is why' + '<span style="color: #E87722; font-weight: bold;">the European and other Western states should supplement the maritime security efforts with structured military-to-military communication with the Iranian side</span>,' + 'including through a hotline that might be created to reduce the risk of miscalculation or misunderstanding that could swiftly escalate to direct confrontation.',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,
@@ -559,7 +563,7 @@ var config = {
             hidden: false,
             title: 'In Depth: Explore the Data',
             image: '',
-            description: '<strong>Explore & find more insights with our dataset</strong>. Zoom using the tools in the top right and click on individual points for more data.' + '<a id="freeExplore" href="#16">Return to the story ↑ </a>',
+            description: '<strong>Explore & find more insights with our dataset</strong>. Zoom using the tools in the top right and click on individual points for more data.' + '<br /><br />' + 'Or, download the entire dataset as CSV <a href="data/06062022_maritime_data.csv" target="_blank">here</a>.' + '<a id="freeExplore" href="#16">Return to the story ↑ </a>',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,

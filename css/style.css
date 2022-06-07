@@ -11,10 +11,13 @@ p {
 }
 a {
   color: #E87722;
+  font-weight: bold;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.2em;
 }
 
 a:hover, a:visited {
-    color: #0071bc;
+    color: #FFFFFF;
 }
 #map {
     top:0;
