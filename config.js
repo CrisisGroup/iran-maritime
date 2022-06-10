@@ -224,7 +224,7 @@ var config = {
             description: 'In 12 May 2019, at a moment of high tension between Tehran and Washington, four tankers were attacked near the UAE port of Fujairah. The Trump administration said Iran was “almost certainly” responsible.',
             location: {
               center: [56.449505, 25.183881],
-              zoom: 12.34,
+              zoom: 11.8,
               pitch: 69.50,
               bearing: -110.13
             },
@@ -307,6 +307,11 @@ var config = {
                 layer: 'iran-markers-tick',
                 duration: 1000,
                 opacity: 0
+              },
+              {
+                layer: 'water-depth',
+                duration: 1000,
+                opacity: 1
               }
             ],
             onChapterExit: [
@@ -343,6 +348,11 @@ var config = {
                 layer: 'iran-markers-tick',
                 duration: 1000,
                 opacity: 1
+              },
+              {
+                layer: 'water-depth',
+                duration: 1000,
+                opacity: 0
               }
             ],
             onChapterExit: [
@@ -366,7 +376,11 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-
+              {
+                layer: 'water-depth',
+                duration: 1000,
+                opacity: 0
+              }
             ],
             onChapterExit: [
               {
@@ -378,6 +392,11 @@ var config = {
                 layer: 'iran-markers-tick',
                 duration: 1000,
                 opacity: 0
+              },
+              {
+                layer: 'water-depth',
+                duration: 1000,
+                opacity: 1
               }
           ]
         },
