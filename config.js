@@ -410,7 +410,7 @@ var config = {
             hidden: false,
             title: '',
             image: 'images/wsj.jpg',
-            description: 'Meanwhile, Western and Iranian media reported of a maritime front between Iran and Israel. The Wall Street Journal in March 2021 asserted that at least a dozen attacks had been carried out by Israel against Iranian vessels since 2019; an outlet close to Iran’s national security establishment a few months later claimed that Israel had targeted Iranian ships fourteen times in two years, mostly in the Red Sea and eastern Mediterranean. <br /><br />These maritime exchanges are one of several fronts across which Iran and Israel appear to be sparring with one another. And while the dynamic at sea is part of a wider rivalry that predates the ratcheting up of tensions during the “maximum pressure” campaign, the revelations further highlighted escalatory risks.',
+            description: 'Meanwhile, Western and Iranian media reported of a maritime front between Iran and Israel. The Wall Street Journal in March 2021 asserted that at least a dozen attacks had been carried out by Israel against Iranian vessels since 2019.',
             location: {
               center: [40.971, 25.829],
               zoom: 4.8,
@@ -441,7 +441,7 @@ var config = {
             hidden: false,
             title: '',
             image: 'images/red-sea-map.jpg',
-            description: 'This brought out of the shadows a maritime front that is one of several across which Israel and Iran are sparring with one another. A report by an Iranian outlet close to Iran’s national security establishment claimed that Israel had targeted Iranian ships 14 times in two years, mostly in the Red Sea and eastern Mediterranean.',
+            description: ' An outlet close to Iran’s national security establishment a few months later claimed that Israel had targeted Iranian ships fourteen times in two years, mostly in the Red Sea and eastern Mediterranean.<br /><br />These maritime exchanges are one of several fronts across which Iran and Israel appear to be sparring with one another. And while the dynamic at sea is part of a wider rivalry that predates the ratcheting up of tensions during the “maximum pressure” campaign, the revelations further highlighted escalatory risks.',
             location: {
               center: [40.971, 25.829],
               zoom: 4.8,
