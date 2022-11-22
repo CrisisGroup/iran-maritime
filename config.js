@@ -586,7 +586,7 @@ var config = {
             hidden: false,
             title: 'In Depth: Explore the Data',
             image: '',
-            description: '<strong>Explore & find more insights with our dataset</strong>. Zoom using the tools in the top right and click on individual points for more data.' + '<br /><br />' + 'Or, download the entire dataset as CSV <a href="data/06122022_maritime_data.csv" target="_blank">here</a>.' + '<a id="freeExplore" href="#16">Return to the story ↑ </a>',
+            description: '<strong>Explore & find more insights with our dataset</strong>. Zoom using the tools in the top right and click on individual points for more data.' + '<br /><br />' + 'Or, download the entire dataset as CSV <a href="data/11222022_maritime_data.csv" target="_blank">here</a>.' + '<a id="freeExplore" href="#16">Return to the story ↑ </a>',
             location: {
               center: [43.894031, 23.574273],
               zoom: 3.75,
